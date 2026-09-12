@@ -187,3 +187,23 @@ Integer[] arr = list.toArray(new Integer[0]);
 
 25. return statement
 return new int[]{a,b};
+
+26. Prefix sum
+int arr[]={2,6,3,4,7}
+prefixsum[]={2,8,11,15,22}
+how?
+prefixsum[0]=arr[0];
+for(int i=0;i<arr.length;i++)
+{
+    prefixsum[i]=prefix[i-1]+arr[i];
+}
+
+if range sum then:---> for this part first create a prefix array then iterate through it
+if(left==0)
+{
+    sum=prefix[right];
+}
+else
+{
+    sum=prefix[r]-prefix[l-1];
+}

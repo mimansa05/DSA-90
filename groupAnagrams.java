@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class ValidAnagram {
+public class groupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         //Key---> sorted strings , Value---> List containing strings
         /*s
@@ -29,6 +29,4 @@ public class ValidAnagram {
         }
         return new ArrayList<>(hash.values());
     }
-} {
-    
 }
