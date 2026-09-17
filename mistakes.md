@@ -22,7 +22,7 @@ map.containsValue(value); ----> to check if value exist or not
 frequency counting
 for(char c:s.toCharArray())
 {
-    hash.put(c,getOrDefaukt(c,0)+1);
+    hash.put(c,getOrDefault(c,0)+1);
 }
 
 loop for keys
@@ -54,7 +54,7 @@ hash.clear();
 3. List<Integer>[] adj
 here adj is an array and each array contains a list
 
-hoe to loop thorugh it?
+how to loop through it?
 for(int it:adj[node])
 
 4. List<List<Integer>> adj;
@@ -78,8 +78,8 @@ int copy[]=Arrays.copyOf(arr,arr.length);
 9. Binary Search
 Arrays.binarySearch(arr,target);
 
-10. Convert char[] to string
-String s= new String(arr);
+10. Convert char[] to string--->if array is int it will not work 
+String s= new String(arr);  --> for int: String s=Arrays.toString(arr)
 
 11. Check
 s.contains("abc");
@@ -129,6 +129,12 @@ loop---> for(int x: set)
 {
 
 }
+Use cases:
+
+Duplicate remove karna
+Kisi element ka existence check karna
+Unique elements count karna
+Visited nodes/elements track karna
 
 18. Stack/Queue
 stack.push(x);
@@ -137,7 +143,7 @@ stack.peek();
 stack.size();
 stack.isEmpty();
 Queue<Integer> q = new LinkedList<>();
-q.offer(x);
+q.offer(x);// q.add(x)
 q.poll();
 q.peek();
 q.isEmpty();
@@ -157,7 +163,7 @@ dq.peekLast();
 Queue<int[]> q=new LinkedList<>();
 q.offer(new int[]{row,col});
 int cur[]=q.poll();
-int row=curr[0];
+int row=cur[0];
 int col=cur[1];
 List<List<Integer>> adj = new ArrayList<>();
 result.add(new ArrayList<>());
