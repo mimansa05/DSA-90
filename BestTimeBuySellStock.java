@@ -1,4 +1,5 @@
 class Solution {
+    //Kadanne Algoarithm
     public int maxProfit(int[] prices) {
         int minprice=prices[0];
         int maxi=0;

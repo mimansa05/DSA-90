@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Solution {
+public class Count_ValueswithEquallySpaced {
     public int countSpecialIntegers(int[] nums) {
         int n=nums.length;
         int count=0;
@@ -34,6 +34,4 @@ public class Solution {
             }
         return count;
     }
-}©leetcode {
-    
 }

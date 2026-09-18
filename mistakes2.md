@@ -33,3 +33,17 @@ for(int i=0;i<m;i++)
 }
 
 3. For checking connected components always use visited array
+
+4. & uses
+if ((n & 1) == 0)
+    // even
+else
+    // odd
+
+5. XOR
+same--->0
+diff--->1
+a ^ a = 0
+a ^ 0 = a
+a ^ b ^ b = a
+a^b=b^a
